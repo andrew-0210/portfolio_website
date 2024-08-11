@@ -44,7 +44,7 @@ const Projects = () => {
           <Link
             href={project.href}
             key={project.id}
-            className='px-4 py-4 bg-white text-black h-[30vh] min-w-[60vw] md:min-w-full flex flex-col
+            className='px-4 py-4 bg-[#fcfff2] text-black h-[30vh] min-w-[60vw] md:min-w-full flex flex-col
             items-start '
           >
             <AnimatedPill>{project.projectType}</AnimatedPill>
