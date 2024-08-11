@@ -2,11 +2,11 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className='h-[70vh] px-[1rem] flex justify-center items-start flex-col gap-6'>
-      <h2 className='text-4xl font-bold tracking-tighter '>
+    <div className='h-[70vh] px-[1rem] flex justify-center items-start flex-col gap-6 '>
+      <h2 className='text-4xl font-bold tracking-tighter'>
         Got an idea? <span className='block'>Share with me</span>
       </h2>
-      <p className='font-medium text-[#585858]'>
+      <p className='font-medium text-[#adadad]'>
         Ready for a design adventure, or need product design advice? Ping me for
         fun collaboration
       </p>

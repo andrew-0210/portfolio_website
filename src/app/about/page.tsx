@@ -1,14 +1,13 @@
-import React from 'react';
+import About from '@/components/About';
+import Experience from '@/components/Experience';
 
-const About = () => {
+const AboutPage = () => {
   return (
-    <div className='h-screen flex items-center px-[1rem] '>
-      <h1 className='text-5xl font-semibold leading-[3.25rem] tracking-tighter lowercase'>
-        A passionate product designer in Tech focused on creating delightful
-        experiences.
-      </h1>
-    </div>
+    <section>
+      <About />
+      <Experience />
+    </section>
   );
 };
 
-export default About;
+export default AboutPage;
