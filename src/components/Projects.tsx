@@ -41,15 +41,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className='overflow-hidden px-[1rem] flex flex-col gap-4 md:max-w-[90em] md:m-auto'>
+    <div className='overflow-hidden flex flex-col gap-4 md:max-w-[90em] md:m-auto px-[1rem]'>
       <h2 className='text-3xl font-bold tracking-tighter'>projects</h2>
-      <section className='flex gap-4 overflow-x-scroll no-scrollbar md:grid md:grid-cols-3 '>
+      <section className='flex flex-1 gap-4 md:grid md:grid-cols-3  no-scrollbar overflow-x-auto'>
         {projects.map(project => (
           <Link
             href={project.href}
             key={project.id}
-            className='px-4 py-4 bg-[#fcfff2] text-black h-[30vh] min-w-[60vw] md:min-w-full flex flex-col
-            items-start '
+            className=' px-4 py-4 bg-[#fcfff2] text-black min-w-[80vw] md:min-w-full flex flex-col h-[70vh] items-start '
           >
             <AnimatedPill>{project.projectType}</AnimatedPill>
             <h3 className='text-3xl font-semibold'>{project.title}</h3>
