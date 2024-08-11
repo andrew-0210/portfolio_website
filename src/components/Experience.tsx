@@ -21,11 +21,11 @@ const experience = [
 
 const Experience = () => {
   return (
-    <div className=' bg-white border-t-[4px] border-gray-400 rounded-t-xl overflow-clip rounded-b-xl pb-[1.25rem] text-black h-full'>
+    <div className=' bg-white border-t-[4px] border-gray-400 rounded-t-xl overflow-clip rounded-b-xl pb-[1.25rem] text-black h-full max-w-[90em] m-auto'>
       <h2 className='text-2xl font-bold tracking-tighter mb-4 text-black py-[1rem] border-b border-gray-400 px-[1rem] bg-[#f7f7f7]'>
         Experience
       </h2>
-      <section className='flex flex-col px-[1rem] gap-3'>
+      <section className='flex flex-col px-[1rem] gap-3 md:grid md:grid-cols-3'>
         {experience.map(card => (
           <div
             key={card.company}

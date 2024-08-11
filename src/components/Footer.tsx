@@ -11,8 +11,8 @@ const Footer = () => {
           Ready for a design adventure, or need product design advice? Ping me
           for fun collaboration
         </p>
-        <Link href={'/about'}>
-          <button className='font-bold bg-white px-5 py-3 text-black trackng'>
+        <Link href='/'>
+          <button className='font-bold bg-white px-5 py-3 text-black tracking-tighter'>
             Drop a Message
           </button>
         </Link>

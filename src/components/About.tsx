@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className='h-screen flex flex-col items-center justify-center px-[1rem] pt-[7rem] gap-5'>
+    <div className='max-w-[90em] m-auto h-screen flex flex-col items-center justify-center px-[1rem] pt-[7rem] gap-5'>
       <h1 className='text-5xl font-semibold leading-[3.25rem] tracking-tighter lowercase'>
         A passionate product designer in Tech focused on creating delightful
         experiences.
