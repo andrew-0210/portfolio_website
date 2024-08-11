@@ -8,30 +8,34 @@ const projects = [
     title: 'Creative Cooks',
     projectType: 'Case Study',
     description: 'A curated food recipe box delivery app.',
-    href: `/${'Creative Cooks'.toLowerCase().replace(/\s+/g, '-')}`,
+    // href: `/${'Creative Cooks'.toLowerCase().replace(/\s+/g, '-')}`,
+    href: `/Creative-cooks`,
   },
   {
     id: 2,
     title: 'HRM Software',
     projectType: 'Product Showcase',
     description: 'A curated food recipe box delivery app.',
-    href: `/${'HRM Software'.toLowerCase().replace(/\s+/g, '-')}`,
+    // href: `/${'HRM Software'.toLowerCase().replace(/\s+/g, '-')}`,
+    href: `/HRM-Software`,
   },
   {
     id: 3,
     title: 'Company Management - Internal Software',
     projectType: 'Product Showcase',
     description: 'A curated food recipe box delivery app.',
-    href: `/${'Internal Company Management Software'
-      .toLowerCase()
-      .replace(/\s+/g, '-')}`,
+    // href: `/${'Internal Company Management Software'
+    //   .toLowerCase()
+    //   .replace(/\s+/g, '-')}`,
+    href: `/Internal-Company-Management-Software`,
   },
   {
     id: 4,
     title: 'Volta',
     projectType: 'Website Design',
     description: 'A curated food recipe box delivery app.',
-    href: `/${'Volta'.toLowerCase().replace(/\s+/g, '-')}`,
+    // href: `/${'Volta'.toLowerCase().replace(/\s+/g, '-')}`,
+    href: `/Volta`,
   },
 ];
 
