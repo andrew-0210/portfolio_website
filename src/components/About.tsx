@@ -5,7 +5,7 @@ const About = () => {
         A passionate product designer in Tech focused on creating delightful
         experiences.
       </h1>
-      <p className='leading-7 text-[1.125rem] tracking-tight text-[#adadad]'>
+      <p className='leading-7 text-[1.125rem] tracking-tight text-[#adadad] font-medium'>
         I believe in creating delightful user experiences that not only look
         amazing but also function flawlessly. Design is my playground, and code
         is my secret sauce to bring those designs to life! I&apos;m always

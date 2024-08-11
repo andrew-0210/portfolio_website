@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 
 const AboutPage = () => {
@@ -6,6 +7,7 @@ const AboutPage = () => {
     <section>
       <About />
       <Experience />
+      <Education />
     </section>
   );
 };
