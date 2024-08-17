@@ -16,9 +16,8 @@ const Navbar = () => {
   return (
     <nav className='p-[1rem] flex justify-between items-center md:px-[3rem] md:py-[2rem] fixed w-screen bg-[#181818] shadow-sm z-[9999]'>
       <Link href='/'>
-        <div className='w-[30]'>
-          <Image src='/andrew.svg' alt='andrew_logo' width={150} height={10} />
-        </div>
+        <Image src='./andrew.svg' alt='andrew_logo' width={150} height={10} />
+
         {/* <h2 className='text-3xl font-bold tracking-tighter flex items-center gap-1'>
           andrew{' '}
           <span className='text-[1.25rem] leading-[0rem] font-normal'>
