@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
           <AnimatedPill>Mumbai,India</AnimatedPill>
         </section>
-        <div className='absolute top-0 left-0 z-[80] h-screen w-screen bg-gradient-to-br from-[#000000]/80 to-[#080808]/30' />
+        <div className='absolute top-0 left-0 z-[80] h-screen w-screen bg-gradient-to-br from-[#000000] to-[#080808]/30 animate-pulse' />
         <div className='w-full absolute h-[120vh] -z-1 -translate-x-1/2 -translate-y-1/2 md:top-[50%] top-[50%] left-[50%] animate-pulse'>
           <Image src='./bg.svg' alt='background_initial' fill={true} />
         </div>
