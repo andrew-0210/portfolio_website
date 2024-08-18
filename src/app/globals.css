@@ -23,6 +23,16 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 1px white;
+  }
+
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
