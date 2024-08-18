@@ -14,16 +14,16 @@ const links = [
 
 const Navbar = () => {
   return (
-    <nav className='p-[1rem] flex justify-between items-center md:px-[3rem] md:py-[2rem] fixed w-screen bg-[#181818] shadow-sm z-[9999]'>
+    <nav className='p-[1rem] flex justify-between items-center md:px-[3rem] md:py-[2rem] fixed w-screen bg-[#0e0e0e] shadow-sm z-[9999]'>
       <Link href='/'>
-        <Image src='./andrew.svg' alt='andrew_logo' width={150} height={10} />
-
-        {/* <h2 className='text-3xl font-bold tracking-tighter flex items-center gap-1'>
-          andrew{' '}
-          <span className='text-[1.25rem] leading-[0rem] font-normal'>
-            &reg;
-          </span>
-        </h2> */}
+        <div className='w-[8rem] h-[1.75rem] relative'>
+          <Image
+            src='./andrew.svg'
+            alt='andrew_logo'
+            fill={true}
+            className='object-fit'
+          />
+        </div>
       </Link>
       <ul className='flex gap-5 font-semibold tracking-tight'>
         {links.map(link => (

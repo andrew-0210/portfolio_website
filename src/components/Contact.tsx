@@ -5,7 +5,7 @@ const Contact = () => {
     <section className='h-full px-[1rem] md:max-w-[90em] m-auto flex justify-between items-center flex-col overflow-hidden py-[4rem] '>
       <div className='p-[1.5px] bg-gradient-to-br from-[#636363] rounded-[60px] overflow-clip'>
         <div className='relative flex items-center justify-center bg-[#0f0f0f] rounded-[60px]'>
-          <div className='h-[3rem] w-[10rem] bg-gray-400/80 absolute -z-2  top-0 blur-3xl' />
+          <div className='h-[3rem] w-[10rem] bg-gray-400/80 absolute -z-2  top-0 blur-3xl animate-pulse' />
           <section className='relative z-[80] p-[2rem] gap-4 flex items-center flex-col'>
             <div className='p-[0.875rem] bg-[#1b1b1b] rounded-[40px] border border-[#202020] shadow-xl shadow-gray-600/30'>
               <div className='bg-gradient-to-b from-[#3d3d3d] to-[#1a1a1a] px-[1.25rem] py-[1.75rem] rounded-[30px] border border-[#3f3f3f]'>
