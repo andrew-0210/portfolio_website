@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
         <div className="lora-font h-full py-[5rem]">
           <span className="flex flex-wrap items-center md:justify-center gap-[0.5rem] md:text-center text-[1.25rem] font-medium leading-[1.25] -tracking-[1px] md:text-[2rem] md:-tracking-[2px]">
-            <span className="flex flex-col items-center gap-[0.5rem]">
+            <span className="flex flex-col md:items-center gap-[0.5rem]">
               <span>I am Andrew, practicing design since</span>
               <span className="lora-font inline-block rounded-full bg-[#dd0000] px-[1.25rem] py-[0.5rem]">
                 3 years
