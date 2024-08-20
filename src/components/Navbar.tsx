@@ -1,40 +1,41 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const links = [
   {
-    name: 'about',
-    href: '/about',
+    name: "about",
+    href: "/about",
   },
   {
-    name: 'contact',
-    href: '/contact',
+    name: "contact",
+    href: "/contact",
   },
 ];
-
 const Navbar = () => {
   return (
-    <nav className='p-[1rem] md:px-[3rem] md:py-[2rem] fixed w-screen bg-[#fafafa] shadow-sm z-[9999] dark:bg-[#0e0e0e]'>
-      <div className='flex justify-between items-center'>
-        <Link href='/'>
-          <div className='w-[8rem] h-[1.75rem] relative'>
+    <div className="fixed z-[999] flex w-screen justify-center pt-[1rem]">
+      <nav className="nav-gradient mx-[1.25rem] flex w-screen items-center justify-between rounded-full border border-[#bebebe] px-[1.25rem] py-[1.25rem] backdrop-blur-[6px] md:mx-[2rem] lg:px-[3rem] xl:max-w-[90em] dark:border-[#343434]">
+        <Link href="/">
+          <div className="relative h-[1.75rem] w-[8rem]">
             <Image
-              src='./andrew.svg'
-              alt='andrew_logo'
+              src="./andrew.svg"
+              alt="andrew_logo"
               fill={true}
-              className='object-fit dark:invert'
+              className="object-fit dark:invert"
             />
           </div>
         </Link>
-        <ul className='flex gap-5 font-semibold tracking-tight'>
-          {links.map(link => (
-            <li key={link.name}>
-              <Link href={link.href}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
+        <div>
+          <ul className="flex gap-5 font-semibold leading-[1.5] -tracking-[1]">
+            {links.map((link) => (
+              <li key={link.name}>
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 };
 

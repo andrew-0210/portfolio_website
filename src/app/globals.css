@@ -32,9 +32,7 @@ body {
   font-family: var(--manrope-font);
 }
 
-span {
-  font-family: var(--lora-font);
-}
+
 
 
 
@@ -48,7 +46,7 @@ span {
   }
 
   h1 {
-    @apply text-5xl font-semibold leading-[1.6] tracking-tighter text-transparent text-gradient
+    @apply text-[2rem] -tracking-[2px] md:leading-[1.25] md:-tracking-[3.5px] md:text-[4rem] text-transparent text-gradient
   }
 
   p {
@@ -63,7 +61,7 @@ span {
 
   @media (prefers-color-scheme:dark) {
     p {
-      @apply text-[#adadad]
+      @apply text-[#f6f6f6]
     }
   }
 }
@@ -89,9 +87,24 @@ span {
     @apply bg-gradient-to-r from-[#0f0f0f] to-[#777777] bg-clip-text
   }
 
+
+  .lora-font {
+    font-family: var(--lora-font);
+  }
+
+  .nav-gradient {
+    @apply bg-gradient-to-r from-[#141414]/5 to-[#1b1b1b]/5
+  }
+
   @media(prefers-color-scheme:dark) {
     .text-gradient {
       @apply bg-gradient-to-r from-[#f8f8f8] to-[#999999]
     }
+
+    .nav-gradient {
+      @apply bg-gradient-to-r from-[#141414]/80 to-[#1b1b1b]/80
+    }
   }
+
+
 }
