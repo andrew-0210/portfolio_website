@@ -19,8 +19,8 @@ const Hero = () => {
             <span className="lora-font font-normal">driven designs.</span>
           </span>
         </h1>
-        <div className="lora-font h-full py-[5rem] col-start-2 col-end-4">
-          <span className="flex flex-wrap items-center md:justify-center gap-[0.5rem] md:text-center text-[1.875rem] font-medium leading-[1.25] -tracking-[1px] md:text-[2rem] md:-tracking-[2px]">
+        <div className="lora-font h-full py-[5rem]">
+          <span className="flex flex-wrap items-center md:justify-center gap-[0.5rem] md:text-center text-[1.125rem] font-medium leading-[1.25] -tracking-[1px] md:text-[2rem] md:-tracking-[2px]">
             <span className="flex flex-col items-start md:items-center gap-[0.5rem]">
               <span>I am Andrew, practicing design since</span>
               <span className="lora-font inline-block rounded-full bg-[#dd0000] px-[1.25rem] py-[0.5rem]">
