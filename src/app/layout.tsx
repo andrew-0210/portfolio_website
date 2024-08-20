@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${lora.variable} selection:[#f4e672]`}
+        className={`${manrope.variable} ${lora.variable} selection:bg-[#ff6f6f] selection:text-[#f4f4f4]`}
       >
         <Navbar />
         {children}
