@@ -3,26 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
+  /* Light mode */
+  --background-rgb: 246, 246, 246;
+  --foreground-rgb: 15, 15, 15;
+  --foreground-gray-rgb: 119, 119, 119;
+  --foreground-green: 72, 190, 43;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Dark Mode */
+    --background-rgb: 15, 15, 15;
+    --foreground-rgb: 246, 246, 246;
+    --foreground-gray-rgb: 153, 153, 153;
+    --foreground-green: 72, 190, 43;
   }
 }
 
+
+
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb))
 }
+
+* {
+  font-family: var(--manrope-font);
+}
+
+span {
+  font-family: var(--lora-font);
+}
+
+
 
 @layer base {
   .font-outline-2 {
@@ -34,9 +48,28 @@ body {
   }
 
   h1 {
-    @apply text-5xl font-semibold leading-[3.25rem] tracking-tighter
+    @apply text-5xl font-semibold leading-[1.6] tracking-tighter text-transparent text-gradient
+  }
+
+  p {
+    @apply text-[#383838] font-medium text-center tracking-tight text-[1.125rem] leading-7
+  }
+
+  @media(max-width: 768px) {
+    h1 {
+      @apply leading-[1.2]
+    }
+  }
+
+  @media (prefers-color-scheme:dark) {
+    p {
+      @apply text-[#adadad]
+    }
   }
 }
+
+
+
 
 @layer utilities {
   .text-balance {
@@ -50,5 +83,15 @@ body {
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#0f0f0f] to-[#777777] bg-clip-text
+  }
+
+  @media(prefers-color-scheme:dark) {
+    .text-gradient {
+      @apply bg-gradient-to-r from-[#f8f8f8] to-[#999999]
+    }
   }
 }

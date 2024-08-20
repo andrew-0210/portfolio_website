@@ -37,7 +37,7 @@ const Education = () => {
               <h3 className='text-[1.125rem] font-semibold tracking-tighter max-w-[50vw]'>
                 {card.institute}
               </h3>
-              <p className='text-[#c4c4c4] font-medium tracking-tighter text-[0.875rem]'>
+              <p className='text-[#c4c4c4] font-medium tracking-tighter text-[0.875rem] text-left'>
                 {card.branch}
               </p>
             </div>

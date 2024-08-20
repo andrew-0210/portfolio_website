@@ -14,7 +14,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <nav className='p-[1rem] md:px-[3rem] md:py-[2rem] fixed w-screen bg-[#0e0e0e] shadow-sm z-[9999]'>
+    <nav className='p-[1rem] md:px-[3rem] md:py-[2rem] fixed w-screen bg-[#fafafa] shadow-sm z-[9999] dark:bg-[#0e0e0e]'>
       <div className='flex justify-between items-center'>
         <Link href='/'>
           <div className='w-[8rem] h-[1.75rem] relative'>
@@ -22,7 +22,7 @@ const Navbar = () => {
               src='./andrew.svg'
               alt='andrew_logo'
               fill={true}
-              className='object-fit'
+              className='object-fit dark:invert'
             />
           </div>
         </Link>

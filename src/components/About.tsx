@@ -1,11 +1,11 @@
 const About = () => {
   return (
     <div className='max-w-[90em] m-auto h-screen flex flex-col items-center justify-center px-[1rem] pt-[7rem] gap-5'>
-      <h1 className='text-5xl font-semibold leading-[3.25rem] tracking-tighter lowercase'>
+      <h1 className='leading-[3.5rem] text-center'>
         A passionate product designer in Tech focused on creating delightful
         experiences.
       </h1>
-      <p className='leading-7 text-[1.125rem] tracking-tight text-[#adadad] font-medium'>
+      <p>
         I believe in creating delightful user experiences that not only look
         amazing but also function flawlessly. Design is my playground, and code
         is my secret sauce to bring those designs to life! I&apos;m always

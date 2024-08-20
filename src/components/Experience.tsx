@@ -35,7 +35,7 @@ const Experience = () => {
               <h3 className='text-[1.125rem] font-semibold tracking-tighter text-black'>
                 {card.company}
               </h3>
-              <p className='text-[#7c7c7c] font-medium tracking-tighter text-[0.875rem]'>
+              <p className='text-[#7c7c7c] font-medium tracking-tighter text-[0.875rem] text-left'>
                 {card.designation}
               </p>
             </div>
