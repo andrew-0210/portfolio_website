@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <main className="relative m-auto grid h-full grid-cols-4 gap-[0.5rem] overflow-hidden px-[1.25rem] md:max-w-[90em] md:grid-cols-12 md:gap-[0.75rem]">
+    <main className="outer-grid relative m-auto h-full overflow-hidden px-[1.25rem] md:max-w-[90em]">
       <header className="z-[90] col-start-1 col-end-5 py-[13.75rem] md:col-start-3 md:col-end-11 md:py-[15rem]">
         <section className="">
           <h1 className="flex flex-col">
@@ -21,8 +21,8 @@ const Hero = () => {
             </span>
           </h1>
         </section>
-        <div className="lora-font z-[90] grid h-full grid-cols-4 gap-[0.5rem] py-[5rem] md:grid-cols-12 md:gap-[0.75rem]">
-          <span className="col-start-2 col-end-5 flex flex-col justify-center gap-[0.5rem] text-[1.125rem] font-medium leading-[1.25] -tracking-[1px] text-[#383838] md:col-start-3 md:col-end-11 md:items-center md:justify-start md:text-center md:text-[2rem] md:-tracking-[2px] dark:text-[#b6b6b6]">
+        <div className="lora-font outer-grid z-[90] h-full py-[5rem]">
+          <span className="inner-grid flex flex-col justify-center text-[1.125rem] font-medium leading-[1.25] -tracking-[1px] text-[#383838] md:items-center md:justify-start md:text-center md:text-[2rem] md:-tracking-[2px] dark:text-[#b6b6b6]">
             <span className="flex flex-col items-start gap-[0.5rem] md:items-center">
               <span>I am Andrew, practicing design since</span>
               <span className="lora-font inline-block rounded-full bg-[#dd0000] px-[1.25rem] py-[0.5rem] text-[#f6f6f6]">

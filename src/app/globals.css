@@ -96,6 +96,14 @@ body {
     @apply bg-gradient-to-r from-[#141414]/5 to-[#1b1b1b]/5
   }
 
+  .outer-grid {
+    @apply grid grid-cols-4 gap-[0.5rem] md:grid-cols-12 md:gap-[0.75rem]
+  }
+
+  .inner-grid {
+    @apply col-start-2 col-end-5 gap-[0.5rem] md:col-start-3 md:col-end-11
+  }
+
   @media(prefers-color-scheme:dark) {
     .text-gradient {
       @apply bg-gradient-to-r from-[#f8f8f8] to-[#999999]
