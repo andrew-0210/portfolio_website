@@ -61,7 +61,7 @@ body {
 
   @media (prefers-color-scheme:dark) {
     p {
-      @apply text-[#f6f6f6]
+      @apply text-[#b6b6b6]
     }
   }
 }
