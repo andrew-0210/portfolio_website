@@ -73,12 +73,11 @@ const Projects = () => {
         <div className="no-scrollbar flex-start flex w-full gap-[0.75rem] overflow-x-auto md:flex-col lg:grid lg:grid-cols-12 lg:gap-[0.75rem]">
           {projects.map((project) => (
             <div className="lg:col-span-6 lg:grid">
-              <Link href={project.href}>
+              <Link href={project.href} key={project.id}>
                 <ProjectCard
                   image={project.image}
                   title={project.title}
                   description={project.description}
-                  key={project.id}
                   projectType={project.projectType}
                 />
               </Link>
