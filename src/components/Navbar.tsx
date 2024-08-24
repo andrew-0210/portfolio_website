@@ -21,7 +21,7 @@ const Navbar = () => {
               src="./andrew.svg"
               alt="andrew_logo"
               fill={true}
-              className="object-fit dark:invert"
+              className="object-fit"
             />
           </div>
         </Link>
