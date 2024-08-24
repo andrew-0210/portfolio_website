@@ -35,7 +35,7 @@ const Hero = () => {
           </span>
         </div>
       </header>
-      <div className="absolute left-0 top-0 z-[80] h-full w-screen animate-pulse bg-gradient-to-br from-[#0f0f0f] to-[#0f0f0f]/50" />
+      <div className="absolute left-0 top-0 z-[80] h-full w-screen animate-pulse bg-gradient-to-br from-[#000000] to-[#000000]/50" />
       <div className="-z-1 absolute left-[50%] top-[50%] h-[120vh] w-full -translate-x-1/2 -translate-y-1/2 animate-pulse md:top-[50%]">
         <Image src="./bg.svg" alt="background_initial" fill={true} />
       </div>
