@@ -47,7 +47,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-[#f6f6f6]">
+    <div className="md:bg-[#f6f6f6] hidden md:block ">
       <section className="m-auto flex flex-col gap-[2rem] rounded-[32px] bg-[#f6f6f6] px-[1rem] py-[7.5rem] md:max-w-[90em] md:rounded-none">
         <div className="flex flex-col gap-[1.25rem]">
           <h2>
