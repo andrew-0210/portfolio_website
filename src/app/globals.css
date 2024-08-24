@@ -4,7 +4,7 @@
 
 :root {
 
-  --background-rgb: 15, 15, 15;
+  --background-rgb: 0, 0, 0;
   --foreground-rgb: 246, 246, 246;
   --foreground-gray-rgb: 153, 153, 153;
 
@@ -38,11 +38,15 @@ body {
   }
 
   h1 {
-    @apply text-[2rem] -tracking-[2px] md:leading-[1.25] md:-tracking-[3.5px] md:text-[4rem] text-transparent text-gradient
+    @apply text-[2rem] -tracking-[2px] md:leading-[1.25] md:-tracking-[3.5px] md:text-[3.5rem] text-transparent text-gradient
+  }
+
+  h2 {
+    @apply text-[1.5rem] md:text-[2rem] uppercase -tracking-[1px] leading-[1.25] text-gradient text-transparent font-medium
   }
 
   p {
-    @apply text-[#383838] font-medium text-center tracking-tight text-[1.125rem] leading-7
+    @apply text-[#c0c0c0] font-normal text-center -tracking-[0.5px] text-[1rem] md:text-[1.125rem] leading-[1.5]
   }
 
   @media(max-width: 768px) {
@@ -51,11 +55,6 @@ body {
     }
   }
 
-  @media (prefers-color-scheme:dark) {
-    p {
-      @apply text-[#b6b6b6]
-    }
-  }
 }
 
 
@@ -76,16 +75,17 @@ body {
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-[#0f0f0f] to-[#777777] bg-clip-text
+    @apply bg-gradient-to-r from-[#f8f8f8] to-[#999999] bg-clip-text
   }
 
 
   .lora-font {
     font-family: var(--lora-font);
+    font-weight: 100;
   }
 
   .nav-gradient {
-    @apply bg-gradient-to-r from-[#141414]/5 to-[#1b1b1b]/5
+    @apply bg-gradient-to-r from-[#141414]/80 to-[#1b1b1b]/80
   }
 
   .outer-grid {
@@ -96,14 +96,12 @@ body {
     @apply col-start-2 col-end-5 gap-[0.5rem] md:col-start-3 md:col-end-11
   }
 
-  @media(prefers-color-scheme:dark) {
-    .text-gradient {
-      @apply bg-gradient-to-r from-[#f8f8f8] to-[#999999]
-    }
+  .card-gradient {
+    @apply bg-gradient-to-b from-[#131313] to-[#1a1a1a]
+  }
 
-    .nav-gradient {
-      @apply bg-gradient-to-r from-[#141414]/80 to-[#1b1b1b]/80
-    }
+  .card-stroke-gradient {
+    @apply bg-gradient-to-r via-[#74cdff] from-[#0087d2]/5 to-[#0087d2]/5
   }
 
 
