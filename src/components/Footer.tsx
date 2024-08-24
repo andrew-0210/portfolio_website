@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex justify-between border-t-[1px] border-[#5c5c5c] py-[2rem] font-semibold tracking-tighter text-[#adadad]">
         <span>&copy; All Rights Reserved.</span>
         <Link href="/">
-          <div className="relative h-[0.625rem] w-[7.5rem]">
+          <div className="relative h-[2rem] w-[7.5rem]">
             <Image
               src="./andrew.svg"
               alt="andrew_logo"
