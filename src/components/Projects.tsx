@@ -1,13 +1,17 @@
-import React, { Fragment } from "react";
-import AnimatedPill from "./AnimatedPill";
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const projects = [
   {
     id: 1,
-    image: "./Cover.png",
+    image: "/Cover.png",
     title: "Creative Cooks",
     projectType: "Case Study",
     description: "A curated food recipe box delivery app.",
@@ -46,10 +50,47 @@ const projects = [
 ];
 
 const Projects = () => {
+  const container = useRef(null);
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+
+      tl.fromTo(
+        ".project__heading",
+        { x: -500 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 2,
+          ease: "power2.inOut",
+        },
+      );
+
+      gsap.fromTo(
+        container.current,
+        { y: 100 },
+        {
+          y: 0,
+          ease: "power2.inOut",
+          duration: 2,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: container.current,
+            start: "top bottom-=5%",
+            toggleActions: "play pause resume reverse",
+          },
+        },
+      );
+    },
+    { scope: container },
+  );
+
   return (
-    <div className="bg-[#f6f6f6]">
+    <div className="bg-[#f6f6f6] opacity-0" ref={container}>
       <section className="m-auto flex flex-col gap-[2rem] rounded-[32px] bg-[#f6f6f6] px-[1rem] py-[7.5rem] md:max-w-[90em] md:rounded-none">
-        <div className="flex flex-col gap-[1.25rem]">
+        <div className="project__heading flex flex-col gap-[1.25rem] opacity-0">
           <h2>
             <span className="block text-[#0f0f0f]">Exceptional Design</span>
             <span className="flex gap-[0.25rem]">

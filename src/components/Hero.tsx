@@ -1,17 +1,56 @@
+"use client";
+
 import Image from "next/image";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
+  const container = useRef(null);
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        container.current,
+        { y: 100 },
+        { y: 0, ease: "power2.inOut", duration: 1, opacity: 1 },
+      );
+      const tl = gsap.timeline();
+
+      tl.fromTo(
+        ".hero__heading",
+        { scale: 0.5, y: 100 },
+        {
+          scale: 1,
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.inOut",
+        },
+      );
+      tl.fromTo(
+        ".hero__body",
+        { y: 100 },
+        { opacity: 1, y: 0, duration: 1.5, ease: "power2.inOut" },
+      );
+    },
+    { scope: container },
+  );
   return (
-    <main className="outer-grid relative m-auto h-full overflow-hidden px-[1.25rem] md:max-w-[90em]">
+    <main
+      className="outer-grid relative m-auto h-full overflow-hidden px-[1.25rem] opacity-0 md:max-w-[90em]"
+      ref={container}
+    >
       <header className="z-[90] col-start-1 col-end-5 pt-[13.75rem] md:col-start-3 md:col-end-11 md:py-[15rem]">
         <section>
-          <h1 className="flex flex-col">
+          <h1 className="hero__heading flex flex-col opacity-0">
             <span className="">
               <span className="font-medium">Focused on</span>
             </span>
             <span className="flex items-center gap-[1rem] md:gap-[2rem]">
               <span className="font-medium">creative</span>
-              <hr className="flex-1" />
+              <hr className="hero__hr flex-1" />
               <span className="lora-font font-normal">and result</span>
             </span>
             <span className="flex flex-row-reverse">
@@ -19,7 +58,7 @@ const Hero = () => {
             </span>
           </h1>
         </section>
-        <div className="lora-font outer-grid z-[90] h-full py-[5rem]">
+        <div className="lora-font outer-grid hero__body z-[90] h-full overflow-hidden py-[5rem] opacity-0 md:h-min">
           <span className="inner-grid flex flex-col justify-center text-[1.125rem] font-medium leading-[1.25] -tracking-[1px] text-[#383838] md:items-center md:justify-start md:text-center md:text-[1.5rem] md:-tracking-[2px] dark:text-[#b6b6b6]">
             <span className="flex flex-col items-start gap-[0.5rem] md:items-center">
               <span>I am Andrew, practicing design since</span>
