@@ -11,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const projects = [
   {
     id: 1,
-    image: "/Cover.png",
+    image: "./Cover.png",
     title: "Creative Cooks",
     projectType: "Case Study",
     description: "A curated food recipe box delivery app.",
